@@ -17,8 +17,8 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   icons: {
-    icon: "/me.png",
-    apple: "/me.png",
+    icon: "/me1.png",
+    apple: "/me1.png",
   },
   title: {
     default: `${DATA.name}`,
@@ -29,18 +29,18 @@ export const metadata: Metadata = {
     "software engineer, web developer, full stack developer, frontend developer, React developer, TypeScript, Next.js, portfolio, software development, programming",
   authors: [
     {
-      name: "Chirag Aggarwal",
+      name: "Gyanendra Prakash",
     },
   ],
-  openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    images: ["/preview.png"],
-    url: "https://www.chiragaggarwal.tech",
-    siteName: `${DATA.name}'s Portfolio`,
-    locale: "en_US",
-    type: "website",
-  },
+  // openGraph: {
+  //   title: `${DATA.name}`,
+  //   description: DATA.description,
+  //   images: ["/preview.png"],
+  //   url: "",
+  //   siteName: `${DATA.name}'s Portfolio`,
+  //   locale: "en_US",
+  //   type: "website",
+  // },
   robots: {
     index: true,
     follow: true,
@@ -72,17 +72,15 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-4xl mx-auto py-12 sm:py-24",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <TooltipProvider delayDuration={0}>
-            {children}
-            <Navbar />
-            <Analytics />
-          </TooltipProvider>
-          <Toaster />
-        </ThemeProvider>
+        <TooltipProvider delayDuration={0}>
+          {children}
+          <Navbar />
+          <Analytics />
+        </TooltipProvider>
+        <Toaster />
       </body>
     </html>
   );
