@@ -2,4 +2,4 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap:
+Sitemap: https://portfolio-zeta-one-39.vercel.app/sitemap.xml

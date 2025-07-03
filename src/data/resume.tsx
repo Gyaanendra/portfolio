@@ -6,7 +6,7 @@ import { FaDocker, FaNodeJs, FaPython } from "react-icons/fa";
 export const DATA = {
   name: "Gyanendra Prakash",
   initials: "GP",
-  url: "https://github.com/Gyaanendra",
+  url: "https://portfolio-zeta-one-39.vercel.app/",
   location: "Mohali Punjab, India",
   locationLink: "/",
   description:
