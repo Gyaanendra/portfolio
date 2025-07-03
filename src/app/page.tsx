@@ -1,13 +1,11 @@
 import ContactMeForm from "@/components/contact-me-form";
 import { HackathonCard } from "@/components/hackathon-card";
-import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Marquee from "@/components/ui/marquee";
-import { TracingBeam } from "@/components/ui/tracing-beam";
 import { DATA } from "@/data/resume";
 import { Notebook } from "lucide-react";
 import Image from "next/image";

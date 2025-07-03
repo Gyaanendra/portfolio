@@ -2,7 +2,6 @@ import type { MDXComponents } from "mdx/types";
 import Image from "next/image";
 import Link from "next/link";
 import { ComponentProps } from "react";
-import CodeBlock from "./components/code-block";
 import GitHub from "./components/ui/github";
 import YouTube from "./components/ui/youtube";
 
@@ -100,10 +99,6 @@ const Heading = ({
   );
 };
 
-const Pre = (props: ComponentProps<"pre">) => {
-  return <CodeBlock {...props} />;
-};
-
 const Code = (props: ComponentProps<"code">) => (
   <code
     className="bg-gray-100 dark:bg-gray-800 rounded px-1 py-0.5 text-xs sm:text-sm"
@@ -186,7 +181,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h5: (props: any) => <Heading as="h5" {...props} />,
     h6: (props: any) => <Heading as="h6" {...props} />,
     p: Paragraph,
-    pre: Pre,
     code: Code,
     inlineCode: InlineCode,
     blockquote: Blockquote,
